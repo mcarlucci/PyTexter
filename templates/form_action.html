@@ -1,0 +1,19 @@
+ <html>
+    <head>
+        <title>PyTexter - Send free texts using Gmail</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>PyTexter</h1>
+            </div>
+            <div id="content">
+                <!-- Hello <strong>{{gmail_address}}</strong> ({{phone_number}})! -->
+                <strong style="color: green; font-size: 18px;"><i>Text Message Successfully Sent!</i></strong> <br>
+                Receiver's carrier gateway: {{provider}}
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

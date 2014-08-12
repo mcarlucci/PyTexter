@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>PyTexter - Send free texts using Gmail</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>PyTexter</h1>
+            </div>
+            <div id="content">
+            <h3><i>Easily send free texts using your Gmail account!</i></h3>
+                <form id="sendform" name="sendform" method="post" action="{{ url_for('send') }}">
+                  <label for="gmail_address">Gmail Address:</label>
+                  <input type="email" name="gmail_address" required/><br />
+                  <label for="gmail_password">Gmail Password:</label>
+                  <input type="password" name="gmail_password" required/><br />
+                  <label for="phone_number">Phone Number:</label>
+                  <input type="number" name="phone_number" required/><br />
+                  <label for="message">Text Message:</label>
+                  <!-- <input type="text" name="message" maxlength="500" required/><br /> -->
+                  <textarea name="message" id="sendform" form="sendform" required></textarea> <br />
+                  <input type="submit" />
+                </form>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
+ 
