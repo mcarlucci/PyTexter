@@ -6,7 +6,7 @@
 
 To install and run locally, execute the following from the command line:
 - git clone https://github.com/mcarlucci/PyTexter.git
-- pip install -r requirements.txt (it is recommended that you set up a virtual enviornment is you dont want the dependencies to be global) 
+- pip install -r requirements.txt
 - cd PyTexter
 - python app.py
 - visit http://127.0.0.1:5000/ in your browser
